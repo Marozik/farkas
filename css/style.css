@@ -170,6 +170,7 @@ body {
 }
 .footer-bottom {
   font-size: 11px;
+  color: #959595;
 }
 @media (max-width: 767.98px) {
   .header {
