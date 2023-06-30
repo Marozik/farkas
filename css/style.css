@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "TradeGothicNextLTPro";
+  src: url("../fonts/TradeGothicNextLTPro-Rg.woff2") format("woff2"), url("../fonts/TradeGothicNextLTPro-Rg.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TradeGothicNextLTPro";
+  src: url("../fonts/TradeGothicNextLTPro-Bd.woff2") format("woff2"), url("../fonts/TradeGothicNextLTPro-Bd.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-Nova.woff2") format("woff2"), url("../fonts/Proxima-Nova.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+a {
+  line-height: 0;
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+label {
+  display: block;
+}
+input,
+textarea {
+  width: 100%;
+}
+body {
+  font-family: "TradeGothicNextLTPro";
+  line-height: 1.2;
+  font-size: 19px;
+}
+.header {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+}
+.header-logo {
+  max-width: 68px;
+}
+
+.top-banner {
+  height: 500px;
+  position: relative;
+}
+.top-banner::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.top-container {
+  height: 100%;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-title {
+  font-size: 48px;
+  letter-spacing: 17px;
+}
+.top-subtitle {
+  font-size: 28px;
+}
+.btn-white {
+  font-size: 24px;
+  color: #171f22;
+  background-color: #fff;
+  min-width: 215px;
+  transition: all 0.3s ease 0s;
+}
+.btn-white:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.card-title {
+  font-size: 24px;
+}
+.title {
+  font-size: 30px;
+}
+.form-container {
+  max-width: 674px;
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 250px;
+  max-height: 350px;
+}
+.form-btn {
+  min-width: 169px;
+  background-color: #fff;
+}
+.form-btn:hover {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 30px;
+  opacity: 0.65;
+  color: #000;
+  transition: opacity 0.3s ease 0s;
+}
+.social-link:hover {
+  opacity: 1;
+  color: #000;
+}
+.footer-btn {
+  min-width: 201px;
+  color: #fff;
+}
+.footer-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.address {
+  font-family: "Proxima Nova";
+  color: #b7b7b7;
+  font-size: 18px;
+}
+.footer-call {
+  font-family: "Proxima Nova";
+  font-size: 44px;
+  vertical-align: middle;
+}
+.footer-bottom {
+  font-size: 11px;
+}
+@media (max-width: 767.98px) {
+  .header {
+    height: 68px;
+  }
+  .header-logo {
+    max-width: 48px;
+  }
+  .top-banner {
+    height: 300px;
+  }
+  .top-title {
+    font-size: 28px;
+  }
+  .top-subtitle {
+    font-size: 20px;
+  }
+  .btn-white {
+    font-size: 18px;
+  }
+  .footer-call {
+    font-size: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .btn-white,
+  .form-btn,
+  .footer-btn {
+    width: 100%;
+  }
+}
